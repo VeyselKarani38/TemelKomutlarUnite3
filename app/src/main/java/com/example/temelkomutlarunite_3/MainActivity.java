@@ -16,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     Button btnUyg5;
     Button btnuyg6;
     Button btnuyg7;
+    Button btnuyg8;
+    Button btnuyg9;
+    Button btnuyg10;
+    Button btnuyg11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         btnUyg5 = findViewById(R.id.btnUyg5);
         btnuyg6 = findViewById(R.id.btnuyg6);
         btnuyg7 = findViewById(R.id.btnuyg7);
+        btnuyg8 = findViewById(R.id.Btnuyg8);
+        btnuyg9 = findViewById(R.id.btnuyg9);
+        btnuyg10 = findViewById(R.id.btnuyg10);
+        btnuyg11 = findViewById(R.id.btnuyg11);
 
         btnUyg1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +91,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        btnuyg8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(MainActivity.this,Uyg8Activity.class);
+                startActivity(i);
+            }
+        });
+        btnuyg9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(MainActivity.this,Uyg9Activity.class);
+                startActivity(i);
+            }
+        });
+        btnuyg10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(MainActivity.this,Uyg10Activity.class);
+                startActivity(i);
+            }
+        });
+        btnuyg11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(MainActivity.this,Uyg11Activity.class);
+                startActivity(i);
+            }
+        });
     }
-
-
-    }
+}
